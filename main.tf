@@ -19,7 +19,6 @@ module "s3" {
   source = "git::https://github.com/your-username/terraform-aws-s3.git"
 
   bucket_name = var.bucket_name
-  environment = var.environment
 }
 
 
@@ -37,13 +36,11 @@ module "ec2" {
 module "rds" {
   source = "git::https://github.com/your-username/terraform-aws-rds.git"
 
-  engine              = var.engine
-  engine_version      = var.engine_version
-  instance_class      = var.instance_class
+  engine         = var.engine
+  engine_version = var.engine_version
+  instance_class = var.instance_class
 
-  db_name             = var.db_name
-  username            = var.username
-  password            = var.password
-
-   subnet_ids = module.vpc.private_subnets 
+  db_name  = var.db_name
+  username = var.username
+  password = var.password
 }
