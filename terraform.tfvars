@@ -6,7 +6,7 @@ public_az           = "eu-north-1a"
 private_az          = "eu-north-1b"
 
 # S3
-bucket_name = "Diksha-CN-S3-Bucket01"
+bucket_name = "dikshacn-bucket-s3-01"
 
 # EC2
 ami_id        = "ami-080254318c2d8932f"   # replace with valid AMI
