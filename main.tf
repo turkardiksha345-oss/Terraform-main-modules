@@ -1,3 +1,6 @@
+provider "aws" {
+   region= "eu-north-1"
+}
 module "vpc" {
   source = "git::https://github.com/your-username/terraform-aws-vpc.git"
 
