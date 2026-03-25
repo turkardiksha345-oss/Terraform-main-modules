@@ -12,7 +12,6 @@ bucket_name = "dikshacn-bucket-s3-01"
 ami_id        = "ami-080254318c2d8932f"   # replace with valid AMI
 instance_type = "t3.micro"
 key_name      = "viju-key"
-vpc_id = "vpc-0fed28ece99ad2aa5"
 
 # RDS
 engine         = "mysql"
