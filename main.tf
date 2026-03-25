@@ -30,7 +30,7 @@ module "ec2" {
   instance_type  = var.instance_type
   key_name       = var.key_name
 
-  vpc_id         = module.vpc.vpc_id
+  vpc_id         = var.vpc_id
 }
 
 
