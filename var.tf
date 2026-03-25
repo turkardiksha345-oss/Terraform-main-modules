@@ -8,7 +8,6 @@ variable "private_az" {  }
 
 # S3
 variable "bucket_name" {  }
-variable "environment" {  }
 
 # EC2
 variable "ami_id" {  }
