@@ -45,6 +45,5 @@ module "rds" {
   username            = var.username
   password            = var.password
 
-  subnet_ids          = [module.vpc.private_subnet_id]
-  security_group_id   = module.ec2.security_group_id   # using EC2 SG (or separate SG module)
+   subnet_ids = module.vpc.private_subnets 
 }
