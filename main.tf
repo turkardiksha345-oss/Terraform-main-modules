@@ -2,7 +2,7 @@ provider "aws" {
    region= "eu-north-1"
 }
 module "vpc" {
-  source = "git::https://github.com/your-username/terraform-aws-vpc.git"
+  source = "git::https://github.com/turkardiksha345-oss/VPC-Module.git"
 
   vpc_cidr_block      = var.vpc_cidr_block
   vpc_name            = var.vpc_name
@@ -16,14 +16,14 @@ module "vpc" {
 
 
 module "s3" {
-  source = "git::https://github.com/your-username/terraform-aws-s3.git"
+  source = "git::https://github.com/turkardiksha345-oss/S3-Module.git"
 
   bucket_name = var.bucket_name
 }
 
 
 module "ec2" {
-  source = "git::https://github.com/your-username/terraform-aws-ec2.git"
+  source = "git::https://github.com/turkardiksha345-oss/EC2-Module.git"
 
   ami_id         = var.ami_id
   instance_type  = var.instance_type
@@ -34,7 +34,7 @@ module "ec2" {
 
 
 module "rds" {
-  source = "git::https://github.com/your-username/terraform-aws-rds.git"
+  source = "git::https://github.com/turkardiksha345-oss/RDS-Module.git"
 
   engine         = var.engine
   engine_version = var.engine_version
