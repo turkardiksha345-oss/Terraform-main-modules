@@ -8,7 +8,7 @@ private_az          = "eu-north-1b"
 private_az_2          = "eu-north-1c"
 
 # S3
-bucket_name = "dikshacn-bucket-s3-01"
+bucket_name = "diksha-terraform-state-bucket"
 
 # EC2
 ami_id        = "ami-080254318c2d8932f"   # replace with valid AMI
