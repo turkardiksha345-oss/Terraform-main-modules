@@ -5,6 +5,7 @@ private_subnet_cidr = "10.0.2.0/24"
 private_subnet_cidr_2 = "10.0.3.0/24"
 public_az           = "eu-north-1a"
 private_az          = "eu-north-1b"
+private_az_2          = "eu-north-1c"
 
 # S3
 bucket_name = "dikshacn-bucket-s3-01"
